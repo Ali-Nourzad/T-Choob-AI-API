@@ -3,7 +3,7 @@ import OpenAI from "openai";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 export default async function handler(request, response) {
-	response.setHeader("Access-Control-Allow-Origin","*");
+	response.setHeader("Access-Control-Allow-Origin","https://ali-nourzad.github.io");
 	response.setHeader("Access-Control-Allow-Methods","POST, OPTIONS");
 	response.setHeader("Access-Control-Allow-Headers","Content-Type");
 
